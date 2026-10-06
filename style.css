@@ -1,0 +1,584 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #212121;
+    color: #556484;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-family: inherit;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(24, 24, 24, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #2b2b2b;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 25px;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.logo span {
+    color: #fafafa;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links a {
+    color: #fafafa;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #78fdff;
+}
+
+.menu-btn {
+    display: none;
+    border: none;
+    background: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 650px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 80px 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.small-title {
+    color: #556484;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(55px, 8vw, 100px);
+    line-height: 0.95;
+    letter-spacing: -5px;
+    margin-bottom: 30px;
+}
+
+.hero h1 span {
+    color: #78fdff;
+}
+
+.hero-description {
+    max-width: 550px;
+    color: #666b7c;
+    font-size: 17px;
+    margin-bottom: 35px;
+}
+
+.hero-button {
+    display: inline-block;
+    background: #78fdff;
+    color: rgb(54, 53, 53);
+
+    padding: 14px 28px;
+    border-radius: 8px;
+
+    font-weight: 700;
+
+    transition: 0.3s;
+}
+
+.hero-button:hover {
+    background: #554bd0;
+    transform: translateY(-3px);
+}
+
+.hero-symbol {
+    font-family: Georgia, serif;
+    font-size: 320px;
+    color: #78fdff;
+    opacity: 0.08;
+    line-height: 1;
+
+    user-select: none;
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+.section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 100px 25px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title > p:first-child {
+    color: #78fdff;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.section-title h2 {
+    font-size: 45px;
+    margin-top: 8px;
+}
+
+.section-description {
+    color: #777b8b;
+    margin-top: 10px;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+    background: white;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.about-text {
+    color: #656a7a;
+    font-size: 16px;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+}
+
+.math-card {
+    background: #20243a;
+    color: white;
+
+    padding: 45px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 20px 50px rgba(32, 36, 58, 0.2);
+
+    font-family: Georgia, serif;
+    font-size: 28px;
+    line-height: 2;
+
+    text-align: center;
+}
+
+.math-card div:nth-child(2) {
+    color: #78fdff;
+}
+
+.math-card div:nth-child(3) {
+    color: #8bd6c5;
+}
+
+
+/* =========================
+   FILTER BUTTONS
+========================= */
+
+.filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.filter-btn {
+    border: 1px solid #dddfea;
+    background: white;
+
+    padding: 10px 22px;
+    border-radius: 30px;
+
+    cursor: pointer;
+
+    color: #626679;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: #78fdff;
+    color: rgb(17, 17, 17);
+    border-color: #78fdff;
+}
+
+
+/* =========================
+   GALLERY
+========================= */
+
+.gallery {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.activity-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid #e8e9ef;
+    transition: 0.3s;
+}
+
+.activity-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 20px 40px rgba(30, 35, 60, 0.1);
+}
+
+.image-container {
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    background: #e7e8f2;
+}
+
+.activity-image {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    cursor: pointer;
+
+    transition: transform 0.5s;
+}
+
+.activity-card:hover .activity-image {
+    transform: scale(1.05);
+}
+
+.activity-number {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+
+    background: rgb(29, 28, 28);
+    color: #78fdff;
+
+    padding: 6px 11px;
+    border-radius: 5px;
+
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.card-content {
+    padding: 22px;
+}
+
+.card-content > span {
+    color: #1a1b1b;
+
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.card-content h3 {
+    margin: 5px 0 8px;
+    font-size: 20px;
+}
+
+.card-content p {
+    color: #777b8b;
+    font-size: 14px;
+}
+
+
+/* =========================
+   REFLECTION
+========================= */
+
+.reflection {
+    background: #20243a;
+    max-width: none;
+
+    padding-left: max(25px, calc((100vw - 1150px) / 2));
+    padding-right: max(25px, calc((100vw - 1150px) / 2));
+
+    color: white;
+}
+
+.reflection .section-title > p {
+    color: #aaa5ff;
+}
+
+.reflection-box {
+    max-width: 850px;
+    margin: auto;
+
+    text-align: center;
+
+    color: #d4d6df;
+
+    font-size: 18px;
+}
+
+.reflection-box p {
+    margin-bottom: 20px;
+}
+
+.quote {
+    color: #aaa5ff;
+    font-family: Georgia, serif;
+    font-size: 90px;
+    height: 70px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #161925;
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+.footer-content h2 {
+    margin-bottom: 8px;
+}
+
+.footer-content p {
+    color: #999cac;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+
+/* =========================
+   LIGHTBOX
+========================= */
+
+.lightbox {
+    display: none;
+
+    position: fixed;
+    inset: 0;
+
+    background: rgba(10, 12, 22, 0.94);
+
+    z-index: 2000;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+    padding: 30px;
+}
+
+.lightbox.show {
+    display: flex;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 80vh;
+
+    object-fit: contain;
+
+    border-radius: 8px;
+
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+#lightboxTitle {
+    color: white;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.close-btn {
+    position: absolute;
+
+    top: 20px;
+    right: 30px;
+
+    background: none;
+    border: none;
+
+    color: white;
+
+    font-size: 45px;
+
+    cursor: pointer;
+}
+
+#lightboxVideo {
+    display: none;
+    max-width: 90%;
+    max-height: 80vh;
+    border-radius: 8px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero-symbol {
+        font-size: 250px;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .navbar {
+        height: 65px;
+    }
+
+    .nav-links {
+        display: none;
+
+        position: absolute;
+
+        top: 65px;
+        left: 0;
+        right: 0;
+
+        background: white;
+
+        flex-direction: column;
+
+        padding: 20px;
+
+        gap: 20px;
+
+        border-bottom: 1px solid #ddd;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .hero {
+        min-height: 600px;
+        text-align: center;
+    }
+
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-symbol {
+        display: none;
+    }
+
+    .section-title h2 {
+        font-size: 35px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .image-container {
+        height: 280px;
+    }
+
+    
+}

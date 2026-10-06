@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Calculus Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">CALC-IT<span>Portfolio</span></div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#activities">Activities</a></li>
+            </ul>
+
+            <button id="menuBtn" class="menu-btn">☰</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+            <p class="small-title">FINALS PROJECT</p>
+
+            <h1>
+                My <span>Calculus</span><br>
+                Portfolio
+            </h1>
+
+            <p class="hero-description">
+                In fulfillment of Finals requirement in 2CALC-IT - Calculus <br>
+                <strong>Name:</strong> Leycano, Clarenz Jeffrey D. <br>
+                <strong>Section:</strong> WD202
+            </p>
+
+            <a href="#activities" class="hero-button">
+                View My Activities
+            </a>
+        </div>
+
+        <div class="hero-symbol">
+            ƒ(𝑥)
+        </div>
+
+    </section>
+
+    <!-- Activities -->
+    <section id="activities" class="activities section">
+
+        <div class="section-title">
+            <p>MY WORK</p>
+            <h2>Calculus Activities</h2>
+
+            <p class="section-description">
+                Click on any image to view it in a larger format.
+            </p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">
+                All
+            </button>
+
+            <button class="filter-btn" data-filter="activity">
+                Activities
+            </button>
+
+            <button class="filter-btn" data-filter="group">
+                Group Work
+            </button>
+
+            <button class="filter-btn" data-filter="exam">
+                Exams
+            </button>
+        </div>
+
+
+        <!-- Gallery -->
+        <div class="gallery">
+
+            <!-- Activity 1 -->
+            <article class="activity-card" data-category="group">
+                <div class="image-container">
+                    <video autoplay muted loop alt="Calculus Group Activity 1"
+                         class="activity-image"
+                         data-title="Informercial">
+                        <source src="media/Group3.mp4">
+                    </video>
+                         
+                    <span class="activity-number">01</span>
+                </div>
+
+                <div class="card-content">
+                    <span>GROUP WORK</span>
+                    <h3>Informercial about Calculus</h3>
+                    <p>
+                       Why do IT students need to learn Calculus? (Why nga ba? eh IT kami kala ko wala na math lol)
+                    </p>
+                </div>
+            </article>
+
+
+            <!-- Activity 2 -->
+            <article class="activity-card" data-category="activity">
+                <div class="image-container">
+                    <img src="media/Act1.jpg"
+                         alt="Calculus Activity 1"
+                         class="activity-image"
+                         data-title="Functions activity">
+                    <span class="activity-number">02</span>
+                </div>
+
+                <div class="card-content">
+                    <span>ACTIVITY</span>
+                    <h3>Activity #1</h3>
+                    <p>
+                        Functions, for once nag-function din ang utak.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Activity 3 -->
+            <article class="activity-card" data-category="group">
+                <div class="image-container">
+                    <img src="media/Group2.png"
+                         alt="Digital Poster"
+                         class="activity-image"
+                         data-title="Functions Poster">
+                    <span class="activity-number">03</span>
+                </div>
+
+                <div class="card-content">
+                    <span>GROUP WORK</span>
+                    <h3>Poster</h3>
+                    <p>
+                        Nag-flex lang yan na Creatives siya sa 3 org.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Activity 4 -->
+            <article class="activity-card" data-category="activity">
+                <div class="image-container">
+                    <img src="media/Act2.jpg"
+                         alt="Calculus Activity 2"
+                         class="activity-image"
+                         data-title="Limits">
+                    <span class="activity-number">04</span>
+                </div>
+
+                <div class="card-content">
+                    <span>ACTIVITY</span>
+                    <h3>Activity #2</h3>
+                    <p>
+                        Limits, describing a value as it reaches another value. So pa-describe ang halaga ko sa kanya, may limit ba yun?
+                    </p>
+                </div>
+            </article>
+
+            <!-- Activity 5 -->
+            <article class="activity-card" data-category="group">
+                <div class="image-container">
+                    <img src="media/Group1.jpg"
+                         alt="Calculus Activity 5"
+                         class="activity-image"
+                         data-title="Review/Activity Cards">
+                    <span class="activity-number">05</span>
+                </div>
+
+                <div class="card-content">
+                    <span>GROUP WORK</span>
+                    <h3>Activity Card</h3>
+                    <p>
+                        Showcase different rules for solving the limit of a function. Also the first group activity na 1 2 3 kanya kanya na.
+                    </p>
+                </div>
+            </article>
+
+
+            <!-- Activity 6 -->
+            <article class="activity-card" data-category="exam">
+                <div class="image-container">
+                    <img src="media/Exam1.jpg"
+                         alt="Calculus Prelims Exam"
+                         class="activity-image"
+                         data-title="Preliminary Examination">
+                    <span class="activity-number">06</span>
+                </div>
+
+                <div class="card-content">
+                    <span>EXAM</span>
+                    <h3>Preliminary Examination</h3>
+                    <p>
+                        Nag-tutor pa yan before ng exam ahh wow. Also sir, scratch ko lang yung asa taas ng page sa likod huhu.
+                    </p>
+                </div>
+            </article>
+
+
+            <!-- Activity 7 -->
+            <article class="activity-card" data-category="activity">
+                <div class="image-container">
+                    <img src="media/Act4.jpg"
+                         alt="Calculus Activity 4"
+                         class="activity-image"
+                         data-title="Derivatives">
+                    <span class="activity-number">07</span>
+                </div>
+
+                <div class="card-content">
+                    <span>ACTIVITY</span>
+                    <h3>Activity #4</h3>
+                    <p>
+                        Multiply the exponent to the coefficient, subtract the exponent by one, tignan ang sagot, bakit hindi ako ang... ay wait iba na yan.
+                    </p>
+                </div>
+            </article>
+
+
+            <!-- Activity 8 -->
+            <article class="activity-card" data-category="activity">
+                <div class="image-container">
+                    <img src="media/Act3.jpg"
+                         alt="Calculus Activity 8"
+                         class="activity-image"
+                         data-title="Area Under the Curve">
+                    <span class="activity-number">08</span>
+                </div>
+
+                <div class="card-content">
+                    <span>ACTIVITY</span>
+                    <h3>Activity #5</h3>
+                    <p>
+                        Applying different rules of finding the derivative. Yun lang wala na hugot, kasi hanggang dun lang talaga kam-
+                    </p>
+                </div>
+            </article>
+
+            <!-- Activity 9 -->
+            <article class="activity-card" data-category="activity">
+                <div class="image-container">
+                    <img src="media/Act5.jpg"
+                         alt="Calculus Activity 6"
+                         class="activity-image"
+                         data-title="Final Calculus Project">
+                    <span class="activity-number">09</span>
+                </div>
+
+                <div class="card-content">
+                    <span>ACTIVITY</span>
+                    <h3>Activity #6</h3>
+                    <p>
+                        Applying different rules of finding the derivative. Part 2 wow.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Activity 10 -->
+            <article class="activity-card" data-category="exam">
+                <div class="image-container">
+                    <img src="media/Exam2.jpg"
+                         alt="Calculus Activity 9"
+                         class="activity-image"
+                         data-title="Midterms Examination">
+                    <span class="activity-number">10</span>
+                </div>
+
+                <div class="card-content">
+                    <span>EXAM</span>
+                    <h3>Midterms Examination</h3>
+                    <p>
+                        No comment.
+                    </p>
+                </div>
+            </article>
+
+
+            
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-content">
+
+            <h2>Calculus Portfolio</h2>
+
+            <p>
+                2CALC-IT - Calculus | WD202
+            </p>
+
+            <p class="copyright">
+                &copy; Copyright 2026. All Rights Reserved. Created by Clarenz Leycano
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Image Lightbox -->
+    <div id="lightbox" class="lightbox">
+
+        <button id="closeLightbox" class="close-btn">
+            ×
+        </button>
+
+        <!-- Image -->
+        <img id="lightboxImage"
+            src=""
+            alt="Expanded calculus activity">
+
+        <!-- Video -->
+        <video id="lightboxVideo"
+            controls
+            playsinline>
+            Your browser does not support video.
+        </video>
+
+        <div id="lightboxTitle"></div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
